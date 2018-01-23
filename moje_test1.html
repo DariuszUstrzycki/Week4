@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  
+  <a	href="http://www.google.com"	class="foo	bar"	id="glink"	data-foo="1">
+    <h1>Google</h1>
+  </a>
+  
+  <script>
+    var	link1	=	document.querySelector('#glink'); //  document.querySelector("selector");zwracaja null jesli nie znajda. wyszukuje	PIERWSZY
+   // element	    
+    
+    var	link2	=   document.getElementById("id"); // document.getElementById("id"); ; nie	używamy	tutaj	selektora	css  a	samej	nazwy ID.
+    window.alert(link);  
+  </script>
+  
+  <script>
+    // wiele. zwracaja zawsze tablice, najwyzej pusta
+  document.querySelectorAll("selector");
+    document.getElementsByTagName("tag"); // nie	używamy tutaj selektora	css	a	samej nazwy tagu
+  document.getElementsByClassName("className"); // jak wyzej
+    
+    var	foo	= document.getElementsByClassName("nieIstKlasa");
+    foo.length; // 0
+    
+    //Jeśli	metoda	zaczyna się	od	query	jako	argument	przyjmuje	ona
+    //zawsze	selektor	CSS.
+    document.querySelectorAll("#home .cup");
+    document.getElementsByTagName("div");
+    
+    document.getElementsByTagName("div");
+    
+    /*Jeśli	metoda zaczyna	się	od	get	jako	argument
+    przyjmuje	ona	string	będący	np.	nazwą
+     -klasy,	
+     -id	lub	
+     - tagu	html*/
+    
+    
+    
+    /*Metod	tych	możemy	używać	zarówno	w	obiekcie	document,	jak	i	w	poszczególnych elementach	(wtedy	szukamy	tylko	wewnątrz	tego	elementu).*/
+    var	foo	=	document.getElementById("glink");	
+    var	fooHeader	=	foo.querySelector("h1");
+    
+    var	stars	=	document.querySelectorAll("div.star");
+    var	firstStarImage	=	stars.querySelector("img");//BŁĄD
+    //UWAGA:	wyszukiwać	względnie	możemy	TYLKO	w	pojedynczym	//elemencie,	tutaj   próbujemy	szukać	w	tablicy	elementów-stars
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </script>
+  
+</body>
+</html>
+
+var	link	=	document.querySelector('#glink');
+var	link	=   document.getElementById("id");
